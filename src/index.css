@@ -1,0 +1,22 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #181818;
+  color: #fff;
+}
+a {
+  color: inherit;
+}
+button {
+  background: #ff9800;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+button[disabled] {
+  background: #888;
+  cursor: not-allowed;
+}
