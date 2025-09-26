@@ -7,7 +7,7 @@ export async function getPopularMovies(page = 1) {
   const { data } = await axios.get(`${BASE_URL}/movie/popular`, {
     params: {
       api_key: API_KEY,
-      language: 'es-ES',
+      language: 'es-MX',
       page,
     },
   });
@@ -18,7 +18,7 @@ export async function getTopRatedMovies(page = 1) {
   const { data } = await axios.get(`${BASE_URL}/movie/top_rated`, {
     params: {
       api_key: API_KEY,
-      language: 'es-ES',
+      language: 'es-MX',
       page,
     },
   });
@@ -29,7 +29,7 @@ export async function getMostViewedMovies(page = 1) {
   const { data } = await axios.get(`${BASE_URL}/movie/now_playing`, {
     params: {
       api_key: API_KEY,
-      language: 'es-ES',
+      language: 'es-MX',
       page,
     },
   });
@@ -40,7 +40,7 @@ export async function searchMovies(query) {
   const { data } = await axios.get(`${BASE_URL}/search/movie`, {
     params: {
       api_key: API_KEY,
-      language: 'es-ES',
+      language: 'es-MX',
       query,
     },
   });
@@ -51,7 +51,7 @@ export async function searchSeries(query) {
   const { data } = await axios.get(`${BASE_URL}/search/tv`, {
     params: {
       api_key: API_KEY,
-      language: 'es-ES',
+      language: 'es-MX',
       query,
     },
   });
@@ -62,7 +62,7 @@ export async function getPopularSeries(page = 1) {
   const { data } = await axios.get(`${BASE_URL}/tv/popular`, {
     params: {
       api_key: API_KEY,
-      language: 'es-ES',
+      language: 'es-MX',
       page,
     },
   });
@@ -73,7 +73,7 @@ export async function getTopRatedSeries(page = 1) {
   const { data } = await axios.get(`${BASE_URL}/tv/top_rated`, {
     params: {
       api_key: API_KEY,
-      language: 'es-ES',
+      language: 'es-MX',
       page,
     },
   });
@@ -84,7 +84,7 @@ export async function getMostViewedSeries(page = 1) {
   const { data } = await axios.get(`${BASE_URL}/tv/on_the_air`, {
     params: {
       api_key: API_KEY,
-      language: 'es-ES',
+      language: 'es-MX',
       page,
     },
   });
@@ -95,7 +95,7 @@ export async function getMovieDetail(id) {
   const { data } = await axios.get(`${BASE_URL}/movie/${id}`, {
     params: {
       api_key: API_KEY,
-      language: 'es-ES',
+      language: 'es-MX',
     },
   });
   return data;
@@ -105,7 +105,7 @@ export async function getSerieDetail(id) {
   const { data } = await axios.get(`${BASE_URL}/tv/${id}`, {
     params: {
       api_key: API_KEY,
-      language: 'es-ES',
+      language: 'es-MX',
     },
   });
   return data;
